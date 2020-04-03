@@ -5,13 +5,13 @@ application = Flask(__name__)
 def hello():
     return "Hello World! \n"
 
-@application.route("/ready \n")
+@application.route("/ready")
 def ready():
-    return "I am ready!"
+    return "I am ready! \n"
 
-@application.route("/health \n")
+@application.route("/health")
 def health():
-    return "I am healthy!"
+    return "I am healthy! \n"
 
 if __name__ == "__main__":
     application.run()
